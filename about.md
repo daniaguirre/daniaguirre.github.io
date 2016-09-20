@@ -1,12 +1,39 @@
 ---
 layout: page
-title: About
-subtitle: Just who the hell you think I am?
+title: About me
+image: hhgg
+subtitle: Just another computer scientist
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Welcome to my website. I hope you can find useful and interesting information about my research work. I am a PhD student in the team [Broadband Communication and Distributed Systems](http://bcds.udg.edu) of the [Universitat de Girona](udg.edu) in Catalonia, Spain. Currently, I am working under the guidance of Dr. [Pere Vilà](http://bcds.udg.edu/perev/doku.php) and Dr. [Lluís Fàbrega](www.udg.edu/personal/lluis.fabrega).
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+## Research interests:
+- Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc
+- Donec ante est, volutpat in mi et, pulvinar congue dolor.
+- Quisque ultrices pulvinar sollicitudin.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+## Publications:
+- Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc
+- Donec ante est, volutpat in mi et, pulvinar congue dolor.
+- Quisque ultrices pulvinar sollicitudin.
+
+## Projects:
+- Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc
+- Donec ante est, volutpat in mi et, pulvinar congue dolor.
+- Quisque ultrices pulvinar sollicitudin.
+
+## Teaching:
+- Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc
+- Donec ante est, volutpat in mi et, pulvinar congue dolor.
+- Quisque ultrices pulvinar sollicitudin.
+
+## Education:
+- Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc
+- Donec ante est, volutpat in mi et, pulvinar congue dolor.
+- Quisque ultrices pulvinar sollicitudin.
+
+## Scholarships and awards:
+- Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc
+- Donec ante est, volutpat in mi et, pulvinar congue dolor.
+- Quisque ultrices pulvinar sollicitudin.

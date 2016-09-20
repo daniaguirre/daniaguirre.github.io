@@ -3,15 +3,28 @@
         <a href="/" class="logo">{{ site.title }}</a>
 
         <ul class="menu">
-            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About</a></li>
+            <li class="menu__entry"><a href="{{ '/about' | prepend: site.baseurl }}">About me</a></li>
             <li class="menu__entry"><a href="{{ '/' | prepend: site.baseurl }}">Blog</a></li>
         </ul>
     </div>
 
     <ul class="social-links">
+    	{% if site.author.orcid %}
+    	 <a href="http://orcid.org/{{ site.author.orcid }}" class="social-links__entry" target="_blank">
+                <i class="ai ai-orcid-square ai-1.5x"></i>
+            </a>
+            
+    	{% endif %}
+    	
+    	{% if site.author.researchgate %}
+    	    <a href="https://www.researchgate.net/profile/{{ site.author.researchgate }}" class="social-links__entry" target="_blank">
+                <i class="ai ai-researchgate-square ai-1.5x"></i>
+            </a>
+    	{% endif %}
+    	
         {% if site.author.github %}
             <a href="https://github.com/{{ site.author.github }}" class="social-links__entry" target="_blank">
-                <i class="fa fa-github"></i>
+                <i class="fa fa-github fa-1.5x"></i>
             </a>
         {% endif %}
 
