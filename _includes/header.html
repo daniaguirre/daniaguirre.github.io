@@ -28,6 +28,12 @@
             </a>
         {% endif %}
 
+		{% if site.author.email %}
+            <a href="mailto:{{ site.author.email }}" class="social-links__entry">
+                <i class="fa fa-envelope fa-1.5x"></i>
+            </a>
+        {% endif %}
+        
         {% if site.author.twitter %}
             <a href="https://twitter.com/{{ site.author.twitter }}" class="social-links__entry" target="_blank">
                 <i class="fa fa-twitter"></i>
