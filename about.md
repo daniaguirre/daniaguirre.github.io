@@ -22,17 +22,18 @@ Welcome to my website. I hope you can find useful and interesting information ab
 Project founded by *the Spanish Ministry of Economy and Competitiveness*. Mar 2016 - feb 2019.
 - **Elastic Networks** (ELASTICNETS). Thematic Network founded by *the Spanish Ministry of Economy and Competitiveness*. Oct 2015 - sep 2017.
 
+{% comment %}
 ## Teaching:
 - Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc
 - Donec ante est, volutpat in mi et, pulvinar congue dolor.
 - Quisque ultrices pulvinar sollicitudin.
+{% endcomment %}
 
 ## Education:
-- Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc
-- Donec ante est, volutpat in mi et, pulvinar congue dolor.
-- Quisque ultrices pulvinar sollicitudin.
+- **Master's Degree in Information Technology**, Universidad Autónoma Metropolitana, Mexico, 2005 - 2010.
+- **Bachelor's Degree in Telematics Engineering**, Instituto Poltécnico Nacional, Mexico, 2011 - 2013.
 
 ## Scholarships and awards:
-- Praesent nisi elit, bibendum ut consectetur ac, aliquet in nunc
-- Donec ante est, volutpat in mi et, pulvinar congue dolor.
-- Quisque ultrices pulvinar sollicitudin.
+- **Scholarship for Ph.D. studies**, 2015 – current. *Mexican National Council for Science and Technology (CONACyT)*. 
+- **Scholarship for Master's Degree studies**, 2005 – 2010 current. *CONACyT*.
+- **Bachelor's Thesis distingished with the first prize of the Engineering Award of Mexico City**. *Institute for Science and Technology of Mexico City*.
