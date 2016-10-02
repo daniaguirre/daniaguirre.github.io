@@ -4,10 +4,10 @@
     <title>Daniela Aguirre</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://hitchhiker.ma/</link>
-    <atom:link href="http://hitchhiker.ma/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 27 Sep 2016 22:00:35 +0200</pubDate>
-    <lastBuildDate>Tue, 27 Sep 2016 22:00:35 +0200</lastBuildDate>
+    <link>https://daniaguirre.github.io/</link>
+    <atom:link href="https://daniaguirre.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 02 Oct 2016 15:48:44 +0200</pubDate>
+    <lastBuildDate>Sun, 02 Oct 2016 15:48:44 +0200</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Mon, 07 Sep 2015 01:34:01 +0200</pubDate>
-        <link>http://hitchhiker.ma/design/tool/2015/09/07/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://hitchhiker.ma/design/tool/2015/09/07/welcome-to-jekyll.html</guid>
+        <link>https://daniaguirre.github.io/design/tool/2015/09/07/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://daniaguirre.github.io/design/tool/2015/09/07/welcome-to-jekyll.html</guid>
         
         
         <category>design</category>
@@ -99,8 +99,8 @@
 &lt;p&gt;Want to suggest something? Please &lt;a href=&quot;https://github.com/kronik3r/daktilo/issues/new&quot;&gt;Send me a request&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Aug 2014 01:56:45 +0200</pubDate>
-        <link>http://hitchhiker.ma/tool/2014/08/20/sample-post.html</link>
-        <guid isPermaLink="true">http://hitchhiker.ma/tool/2014/08/20/sample-post.html</guid>
+        <link>https://daniaguirre.github.io/tool/2014/08/20/sample-post.html</link>
+        <guid isPermaLink="true">https://daniaguirre.github.io/tool/2014/08/20/sample-post.html</guid>
         
         
         <category>tool</category>

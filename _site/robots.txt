@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://hitchhiker.ma/sitemap.xml
+Sitemap: https://daniaguirre.github.io/sitemap.xml

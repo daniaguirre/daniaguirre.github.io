@@ -14,11 +14,11 @@ Welcome to my website. I hope you can find useful and interesting information ab
 - Distributed algorithms
 
 ## Publications:
-- D. Aguirre-Guerrero, R. Marcelín-Jiménez, E. Rodriguez-Colina, and M. Pascoe-Chalke, **Congestion Control for a Fair Packet Delivery in WSN: From a Complex System Perspective**, *The Scientific World Journal*, 2014. DOI: [10.1155/2014/381305](https://www.hindawi.com/journals/tswj/2014/381305){:target="_blank"} [<i class="fa fa-file-pdf-o fa-1.5x"></i>](http://downloads.hindawi.com/journals/tswj/2014/381305.pdf){:target="_blank", :class="social-links__entry"}
-- D. Aguirre-Guerrero, R. Marcelín-Jiménez and E. Rodriguez-Colina, **WSN Simulation Model with a Complex Systems Approach**. *Summer Computer Simulation Conference* (SCSC '13). Vista, CA, 2013. ISBN: [978-1-62748-276-9](http://dl.acm.org/citation.cfm?id=2557740){:target="_blank"} [<i class="fa fa-file-pdf-o fa-1.5x"></i>](../assets/pdf/wsn_sim_model_comp_sys_appr.pdf){:target="_blank", :class="social-links__entry"}
+- Daniela Aguirre-Guerrero, Ricardo Marcelín-Jiménez, Enrique Rodriguez-Colina, y Michael Pascoe-Chalke, **Congestion Control for a Fair Packet Delivery in WSN: From a Complex System Perspective**, *The Scientific World Journal*, vol. 2014, pp. 1–12, 2014, DOI: [10.1155/2014/381305](https://www.hindawi.com/journals/tswj/2014/381305){:target="_blank"} [<i class="fa fa-file-pdf-o fa-1.5x"></i>](http://downloads.hindawi.com/journals/tswj/2014/381305.pdf){:target="_blank", :class="social-links__entry"}
+- Daniela Aguirre-Guerrero, Ricardo Marcelín-Jiménez, y Enrique Rodriguez-Colina, **WSN Simulation Model with a Complex Systems Approach**, in *Proceedings of the Summer Computer Simulation Conference*, 2013, art. 41, Toronto, Canadá, ISBN: [978-1-62748-276-9](http://dl.acm.org/citation.cfm?id=2557740){:target="_blank"} [<i class="fa fa-file-pdf-o fa-1.5x"></i>](../assets/pdf/wsn_sim_model_comp_sys_appr.pdf){:target="_blank", :class="social-links__entry"}
 
 ## Projects:
-- **Redes Interdependientes y con Restricciones Geográficas: Indicadores de Robustez** (GIROS). 
+- **Interdependent Networks under Geographical Constraints** (GIROS). 
 Project founded by *the Spanish Ministry of Economy and Competitiveness*. Mar 2016 - feb 2019.
 - **Elastic Networks** (ELASTICNETS). Thematic Network founded by *the Spanish Ministry of Economy and Competitiveness*. Oct 2015 - sep 2017.
 
@@ -30,10 +30,11 @@ Project founded by *the Spanish Ministry of Economy and Competitiveness*. Mar 20
 {% endcomment %}
 
 ## Education:
-- **Master's Degree in Information Technology**, Universidad Autónoma Metropolitana, Mexico, 2005 - 2010.
-- **Bachelor's Degree in Telematics Engineering**, Instituto Poltécnico Nacional, Mexico, 2011 - 2013.
+- **Master's Degree in Information Technology**, Universidad Autónoma Metropolitana, Mexico, 2011 - 2013.
+Thesis: Congestion Control in Wireless Sensor Networks, [<i class="fa fa-file-pdf-o fa-1.5x"></i>](http://tesiuami.izt.uam.mx/uam/aspuam/presentatesis.php?recno=16121&docs=UAMI16121.pdf){:target="_blank", :class="social-links__entry"}
+- **Bachelor's Degree in Telematics Engineering**, Instituto Poltécnico Nacional, Mexico, 2004 - 2009.
 
 ## Scholarships and awards:
-- **Scholarship for Ph.D. studies**, 2015 – current. *Mexican National Council for Science and Technology (CONACyT)*. 
-- **Scholarship for Master's Degree studies**, 2005 – 2010 current. *CONACyT*.
-- **Bachelor's Thesis distingished with the first prize of the Engineering Award of Mexico City**. *Institute for Science and Technology of Mexico City*.
+- **Scholarship for Doctoral' studies**, 2015 – current. *Mexican National Council for Science and Technology (CONACyT)*. 
+- **Scholarship for Master's Degree studies**, 2011 – 2013 current. *CONACyT*.
+- **Bachelor's Thesis distingished with the Engineering Award of Mexico City**. *Institute for Science and Technology of Mexico City*.
