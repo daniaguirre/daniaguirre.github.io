@@ -14,8 +14,8 @@ Welcome to my website. I hope you can find useful and interesting information ab
 - Distributed algorithms
 
 ## Publications:
-- Daniela Aguirre-Guerrero, Ricardo Marcelín-Jiménez, Enrique Rodriguez-Colina, y Michael Pascoe-Chalke, **Congestion Control for a Fair Packet Delivery in WSN: From a Complex System Perspective**, *The Scientific World Journal*, pp. 1–12, 2014, DOI: [10.1155/2014/381305](https://www.hindawi.com/journals/tswj/2014/381305){:target="_blank"} [<i class="fa fa-file-pdf-o fa-1.5x"></i>](http://downloads.hindawi.com/journals/tswj/2014/381305.pdf){:target="_blank", :class="social-links__entry"}
-- Daniela Aguirre-Guerrero, Ricardo Marcelín-Jiménez, y Enrique Rodriguez-Colina, **WSN Simulation Model with a Complex Systems Approach**, in *Proceedings of the Summer Computer Simulation Conference*, Toronto, 2015, ISBN: [978-1-62748-276-9](http://dl.acm.org/citation.cfm?id=2557740){:target="_blank"} [<i class="fa fa-file-pdf-o fa-1.5x"></i>](../assets/pdf/wsn_sim_model_comp_sys_appr.pdf){:target="_blank", :class="social-links__entry"}
+- Daniela Aguirre-Guerrero, Ricardo Marcelín-Jiménez, Enrique Rodriguez-Colina and Michael Pascoe-Chalke, **Congestion Control for a Fair Packet Delivery in WSN: From a Complex System Perspective**, *The Scientific World Journal*, pp. 1–12, 2014, DOI: [10.1155/2014/381305](https://www.hindawi.com/journals/tswj/2014/381305){:target="_blank"} [<i class="fa fa-file-pdf-o fa-1.5x"></i>](http://downloads.hindawi.com/journals/tswj/2014/381305.pdf){:target="_blank", :class="social-links__entry"}
+- Daniela Aguirre-Guerrero, Ricardo Marcelín-Jiménez and Enrique Rodriguez-Colina, **WSN Simulation Model with a Complex Systems Approach**, in *Proceedings of the Summer Computer Simulation Conference*, Toronto, 2015, ISBN: [978-1-62748-276-9](http://dl.acm.org/citation.cfm?id=2557740){:target="_blank"} [<i class="fa fa-file-pdf-o fa-1.5x"></i>](../assets/pdf/wsn_sim_model_comp_sys_appr.pdf){:target="_blank", :class="social-links__entry"}
 
 ## Projects:
 - **Interdependent Networks under Geographical Constraints** (GIROS). 
@@ -35,6 +35,6 @@ Thesis: Congestion Control in Wireless Sensor Networks, [<i class="fa fa-file-pd
 - **Bachelor's Degree in Telematics Engineering**, Instituto Poltécnico Nacional, Mexico, 2004 - 2009. Thesis: Intelligent Traffic Light Network.
 
 ## Scholarships and awards:
-- **Scholarship for Doctoral studies** funded by * the Mexican National Council for Science and Technology (CONACyT)*, 2015 – current. 
+- **Scholarship for Doctoral studies** funded by *the Mexican National Council for Science and Technology (CONACyT)*, 2015 – current. 
 - **Scholarship for Masters Degree studies** funded by *CONACyT*, 2011 – 2013.
 - **Bachelor's Thesis distingished with the Engineering Award of Mexico City**. *Institute for Science and Technology of Mexico City*.
