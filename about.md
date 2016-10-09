@@ -19,8 +19,8 @@ Welcome to my website. I hope you can find useful and interesting information ab
 
 ## Projects:
 - **Interdependent Networks under Geographical Constraints** (GIROS). 
-Project founded by *the Spanish Ministry of Economy and Competitiveness (MINECO)*. Mar 2016 - feb 2019.
-- **Elastic Networks** (ELASTICNETS). Thematic Network founded by *the MINECO*. Oct 2015 - sep 2017.
+Project funded by *the Spanish Ministry of Economy and Competitiveness (MINECO)*, Mar 2016 - feb 2019.
+- **Elastic Networks** (ELASTICNETS). Thematic Network funded by *MINECO*, Oct 2015 - sep 2017.
 
 {% comment %}
 ## Teaching:
@@ -35,6 +35,6 @@ Thesis: Congestion Control in Wireless Sensor Networks, [<i class="fa fa-file-pd
 - **Bachelor's Degree in Telematics Engineering**, Instituto Poltécnico Nacional, Mexico, 2004 - 2009. Thesis: Intelligent Traffic Light Network.
 
 ## Scholarships and awards:
-- **Scholarship for Doctoral studies**, 2015 – current. *Mexican National Council for Science and Technology (CONACyT)*. 
-- **Scholarship for Masters Degree studies**, 2011 – 2013. *CONACyT*.
+- **Scholarship for Doctoral studies** funded by * the Mexican National Council for Science and Technology (CONACyT)*, 2015 – current. 
+- **Scholarship for Masters Degree studies** funded by *CONACyT*, 2011 – 2013.
 - **Bachelor's Thesis distingished with the Engineering Award of Mexico City**. *Institute for Science and Technology of Mexico City*.
