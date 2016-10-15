@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/ico"     href="/assets/images/favicon.ico">
-<title> Welcome to Jekyll! &raquo;  Daniela Aguirre</title>
+<title> Bipartite Graphs &raquo;  Daniela Aguirre</title>
 <meta name="description" content="Personal blog about network science, routing, robustnees in networks, distributed algorithms, graph theory.
 ">
 <meta name="keywords" content="">
-<link rel="canonical" href="https://daniaguirre.github.io/design/tool/2015/09/07/welcome-to-jekyll.html">
+<link rel="canonical" href="https://daniaguirre.github.io/graph-theory/teaching/2016/10/10/bipartite-graphs.html">
         
 
 
@@ -17,7 +17,7 @@
 
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Welcome to Jekyll!" />
+<meta name="twitter:title" content="Bipartite Graphs" />
 <meta name="twitter:description" content="Personal blog about network science, routing, robustnees in networks, distributed algorithms, graph theory.
 " />
 <meta name="twitter:image" content="https://daniaguirre.github.io" />
@@ -29,10 +29,10 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Welcome to Jekyll!">
+<meta property="og:title" content="Bipartite Graphs">
 <meta property="og:description" content="Personal blog about network science, routing, robustnees in networks, distributed algorithms, graph theory.
 ">
-<meta property="og:url" content="https://daniaguirre.github.io/design/tool/2015/09/07/welcome-to-jekyll.html">
+<meta property="og:url" content="https://daniaguirre.github.io/graph-theory/teaching/2016/10/10/bipartite-graphs.html">
 <meta property="og:site_name" content="Daniela Aguirre">
 
         <link href='//fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
@@ -88,12 +88,32 @@
 </header>
 
             <h1 class="page-title post-title">
-    <div class="page-title__text post-title__text">Welcome to Jekyll!</div>
-    <div class="page-title__subtitle post-title__subtitle">Feel home!</div>
+    <div class="page-title__text post-title__text">Bipartite Graphs</div>
+    <div class="page-title__subtitle post-title__subtitle">an overview</div>
 </h1>
 
 <div class="content">
-    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    <p><code class="highlighter-rouge">Definition:</code></p>
+
+<p>A graph</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*} %]]></script>
+
+<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 <p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
 
@@ -114,7 +134,7 @@
     <div class="about__devider">*****</div>
     <div class="about__text">
         Written by <strong>  Daniela Aguirre Guerrero </strong>
-        on <strong>07 September 2015</strong>
+        on <strong>10 October 2016</strong>
     </div>
 </div>
 
