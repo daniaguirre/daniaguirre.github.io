@@ -6,55 +6,123 @@
 </description>
     <link>https://daniaguirre.github.io/</link>
     <atom:link href="https://daniaguirre.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 15 Oct 2016 17:56:09 +0200</pubDate>
-    <lastBuildDate>Sat, 15 Oct 2016 17:56:09 +0200</lastBuildDate>
+    <pubDate>Mon, 31 Oct 2016 22:48:45 +0100</pubDate>
+    <lastBuildDate>Mon, 31 Oct 2016 22:48:45 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
-        <title>Bipartite Graphs</title>
-        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Definition:&lt;/code&gt;&lt;/p&gt;
+        <title>Transitive Graphs</title>
+        <description>&lt;h2 id=&quot;automorphism&quot;&gt;Automorphism&lt;/h2&gt;
 
-&lt;p&gt;A graph&lt;/p&gt;
+&lt;p&gt;An automorphism of a graph &lt;script type=&quot;math/tex&quot;&gt;G=(V,E)&lt;/script&gt; is a bijective map &lt;script type=&quot;math/tex&quot;&gt;\pi:V \to V&lt;/script&gt; that preserves adjacency, i.e. 
+if &lt;script type=&quot;math/tex&quot;&gt;(v_1,v_2)\in E&lt;/script&gt; then &lt;script type=&quot;math/tex&quot;&gt;(\pi(v_1),\pi(v_2))\in E&lt;/script&gt;.&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
-\begin{align*}
-  &amp; \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  &amp; (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-      \phi(e_1, e_1) &amp; \cdots &amp; \phi(e_1, e_n) \\
-      \vdots &amp; \ddots &amp; \vdots \\
-      \phi(e_n, e_1) &amp; \cdots &amp; \phi(e_n, e_n)
-    \end{array} \right)
-  \left( \begin{array}{c}
-      y_1 \\
-      \vdots \\
-      y_n
-    \end{array} \right)
+\begin{align*} 
+	\begin{array}{ccc}
+		\sigma:&amp;V	&amp;\to	&amp;V \\
+      		&amp;1	&amp;\to	&amp;4 \\
+      		&amp;2	&amp;\to	&amp;1 \\
+			&amp;3	&amp;\to	&amp;2 \\
+			&amp;4	&amp;\to	&amp;3 \\
+    \end{array}
 \end{align*} %]]&gt;&lt;/script&gt;
 
-&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/graph_test.png&quot; alt=&quot;automorphism&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example 1.&lt;/strong&gt; &lt;em&gt;An automorphism of the square graph defined by the permutation &lt;script type=&quot;math/tex&quot;&gt;\sigma=(1,2,3,4)&lt;/script&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;An automorphism of a graph &lt;script type=&quot;math/tex&quot;&gt;G=(V,E)&lt;/script&gt; can be seen as a permutation over the set of vertices &lt;script type=&quot;math/tex&quot;&gt;V&lt;/script&gt;. 
+Then, the automorphism of the &lt;strong&gt;Example 1&lt;/strong&gt; is denoted by the permuation &lt;script type=&quot;math/tex&quot;&gt;\sigma=(1,2,3,4)&lt;/script&gt; (in &lt;a href=&quot;https://en.wikipedia.org/wiki/Permutation#Cycle_notation&quot; target=&quot;_blank&quot;&gt;cycle notation&lt;/a&gt;). 
+Notice that &lt;script type=&quot;math/tex&quot;&gt;\sigma^2=(1,3)(2,4)&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\sigma^3=(1,4,3,2)&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\sigma^4=(1)(2)(3)(4)&lt;/script&gt; are also automorphisms of the square graph.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;Example 2.&lt;/strong&gt; &lt;em&gt;The automorphisms of the square graph defined by the permutations &lt;script type=&quot;math/tex&quot;&gt;\sigma^2&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\sigma^3&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\sigma^4&lt;/script&gt;.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here, we have two interesting questions:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Do all graphs have any automorphism?&lt;/li&gt;
+  &lt;li&gt;What is the maximum number of automorphisms of a graph?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The answer of the first question is &lt;em&gt;yes&lt;/em&gt;, all graphs have at least the &lt;code class=&quot;highlighter-rouge&quot;&gt;trivial automorphism&lt;/code&gt;, denoted by &lt;script type=&quot;math/tex&quot;&gt;\varepsilon&lt;/script&gt;, 
+that maps each vertex with itself. As we can see in the &lt;strong&gt;Example 2&lt;/strong&gt;, &lt;script type=&quot;math/tex&quot;&gt;\varepsilon=\sigma^4&lt;/script&gt;. 
+Turning now to the second question, since an automorphism is defined by a permutation over &lt;script type=&quot;math/tex&quot;&gt;|V|&lt;/script&gt;, 
+then a graph has at most &lt;script type=&quot;math/tex&quot;&gt;|V|!&lt;/script&gt; automorphisms, it is the number of permutation of the set &lt;script type=&quot;math/tex&quot;&gt;V&lt;/script&gt;. 
+Then the set of automorphisms of a graph &lt;script type=&quot;math/tex&quot;&gt;G=(V,E)&lt;/script&gt;, denoted by &lt;script type=&quot;math/tex&quot;&gt;Aut(G)&lt;/script&gt;, is a subset of the set of permutations of &lt;script type=&quot;math/tex&quot;&gt;V&lt;/script&gt;.
+In fact, for the complete graph &lt;script type=&quot;math/tex&quot;&gt;K_n&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;Aut(K_n)&lt;/script&gt; is set of permuation of $n$ elements.
+By the other hand, for the square graph &lt;script type=&quot;math/tex&quot;&gt;Aut(G)=\{\varepsilon, \sigma, \sigma^2, \sigma^3, \rho, \tau\}&lt;/script&gt;, where &lt;script type=&quot;math/tex&quot;&gt;\rho=(2,4)&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\tau=(1,3)&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 3.&lt;/strong&gt; &lt;em&gt;The automorphisms of the &lt;script type=&quot;math/tex&quot;&gt;K_3&lt;/script&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;vertex-transitive-graphs&quot;&gt;Vertex-transitive Graphs&lt;/h2&gt;
+
+&lt;p&gt;A graph &lt;script type=&quot;math/tex&quot;&gt;G=(V,E)&lt;/script&gt; is vertex-transitive if there is an automorphims between any two of its vertices, i.e. 
+for all &lt;script type=&quot;math/tex&quot;&gt;u,v \in V&lt;/script&gt;, there exists &lt;script type=&quot;math/tex&quot;&gt;\pi \in Aut(G)&lt;/script&gt; such that &lt;script type=&quot;math/tex&quot;&gt;\pi(u)=v&lt;/script&gt;. Notice that the graph of &lt;strong&gt;Example 1&lt;/strong&gt; is vertex-transitive.
+Now, look at the graph of &lt;strong&gt;Example 4&lt;/strong&gt;, is it vertex-transitive?.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 4.&lt;/strong&gt; &lt;em&gt;The 3-path graph with the automorphism &lt;script type=&quot;math/tex&quot;&gt;\sigma = (1,3)&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;Aut(G)=\{\varepsilon, \sigma\}&lt;/script&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Roughly speaking, all nodes in a vertex-transive graph have the same &lt;em&gt;“graph perpective”&lt;/em&gt;. 
+From &lt;strong&gt;Example 4&lt;/strong&gt; vertices &lt;script type=&quot;math/tex&quot;&gt;1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;3&lt;/script&gt; have the same &lt;em&gt;“graph perpective”&lt;/em&gt;, actually &lt;script type=&quot;math/tex&quot;&gt;\sigma&lt;/script&gt; defines an automorphism between these vertices.
+However, the vertex &lt;script type=&quot;math/tex&quot;&gt;2&lt;/script&gt; has a different &lt;em&gt;“graph perpective”&lt;/em&gt;, then it is not possible
+define automorphism over &lt;script type=&quot;math/tex&quot;&gt;G&lt;/script&gt; that maps the vertex &lt;script type=&quot;math/tex&quot;&gt;2&lt;/script&gt; with the vertex &lt;script type=&quot;math/tex&quot;&gt;1&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;3&lt;/script&gt;.
+Therefore, the graph of &lt;strong&gt;Example 4&lt;/strong&gt; is not vertex-transitive.&lt;/p&gt;
+
+&lt;p&gt;In general, all vertex-transitive graph are &lt;a href=&quot;https://en.wikipedia.org/wiki/Regular_graph&quot; target=&quot;_blank&quot;&gt;regular&lt;/a&gt; but not all regular graphs are vertex-transitive.&lt;/p&gt;
+
+&lt;h2 id=&quot;edge-transitive-graphs&quot;&gt;Edge-transitive Graphs&lt;/h2&gt;
+
+&lt;p&gt;A graph &lt;script type=&quot;math/tex&quot;&gt;G=(V,E)&lt;/script&gt; is edge-transitive if there is an automorphism between any two adjacent vertices, i.e. 
+for all &lt;script type=&quot;math/tex&quot;&gt;(u,v) \in E&lt;/script&gt;, there exists &lt;script type=&quot;math/tex&quot;&gt;\pi \in Aut(G)&lt;/script&gt; such that &lt;script type=&quot;math/tex&quot;&gt;(\pi(u),\pi(v))\in E&lt;/script&gt;. 
+From &lt;strong&gt;Example 4&lt;/strong&gt;, &lt;script type=&quot;math/tex&quot;&gt;E=\{(1,2),(2,3)\}&lt;/script&gt; and  &lt;script type=&quot;math/tex&quot;&gt;(\sigma(1),\sigma(2))=(3,2), (\sigma(3),\sigma(2))=(1,2)\in E&lt;/script&gt;,
+therefore the 3-path graph is edge-transitive. Following a similiar approach it can be showed that
+the square graph (see &lt;strong&gt;Example 1&lt;/strong&gt;) is also edge-transitive.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example 5.&lt;/strong&gt; &lt;em&gt;A graph with the automorphisms &lt;script type=&quot;math/tex&quot;&gt;\sigma = (1,2,3,4,5)(6,7,8,9,10)&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;\rho=(1,6)(2,7)(3,8)(4,9)(5,10)&lt;/script&gt;, 
+&lt;script type=&quot;math/tex&quot;&gt;\tau=(2,5)(3,4)(7,10)(8,9)&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;Aut(G)=\{\varepsilon, \sigma^i, \sigma^i\rho, \rho, \tau\}&lt;/script&gt;&lt;/em&gt; for &lt;script type=&quot;math/tex&quot;&gt;1\leq i \leq 5&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let see if the graph &lt;script type=&quot;math/tex&quot;&gt;G=(V,E)&lt;/script&gt; of &lt;strong&gt;Example 5&lt;/strong&gt; is edge-transitive. Let &lt;script type=&quot;math/tex&quot;&gt;E_1&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;E_2&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;E_3&lt;/script&gt; be subsets of &lt;script type=&quot;math/tex&quot;&gt;E&lt;/script&gt;, such that 
+&lt;script type=&quot;math/tex&quot;&gt;E=E_1\cup E_2 \cup E_3&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;E_1=\{(1,2),(2,3),(3,4),(4,5),(5,1)\}&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;E_2=\{(6,7),(7,8),(8,9),(9,10)\}&lt;/script&gt; and
+&lt;script type=&quot;math/tex&quot;&gt;E_3=\{(1,6),(2,7),(3,8),(4,9),(5,10)\}&lt;/script&gt;. We have that:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\sigma^i\rho&lt;/script&gt; defines an automorphism from edges in &lt;script type=&quot;math/tex&quot;&gt;E_1&lt;/script&gt; to edges in &lt;script type=&quot;math/tex&quot;&gt;E_2&lt;/script&gt;, 
+e.g. &lt;script type=&quot;math/tex&quot;&gt;(1,2)\in E_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;(\sigma(\rho(1)),\sigma( \rho (2)))=(\sigma(6),\sigma(7))=(7,8)\in E_2&lt;/script&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\sigma^i&lt;/script&gt; defines an automorphism between edges in &lt;script type=&quot;math/tex&quot;&gt;E_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;E_2&lt;/script&gt;, 
+e.g. &lt;script type=&quot;math/tex&quot;&gt;(3,4)\in E_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;(\sigma(3),\sigma(4))=(4,5)\in E_1&lt;/script&gt;. Similarly, &lt;script type=&quot;math/tex&quot;&gt;(7,8)\in E_2&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;(\sigma^2(7),\sigma^2(8))=(9,10)\in E_2&lt;/script&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;script type=&quot;math/tex&quot;&gt;\tau&lt;/script&gt; defines an automorphism between edges in &lt;script type=&quot;math/tex&quot;&gt;E_3&lt;/script&gt;. 
+e.g. &lt;script type=&quot;math/tex&quot;&gt;(2,7)\in E_3&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;(\tau(2),\tau(7))=(5,10)\in E_3&lt;/script&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;However, since edges in &lt;script type=&quot;math/tex&quot;&gt;E_3&lt;/script&gt; are part of two cycles of length 4 and edges in 
+&lt;script type=&quot;math/tex&quot;&gt;E_1 \cup E_2&lt;/script&gt; are part of a cycle of length 4 and a cycle 5, then it is not possible define an automorphism between them.
+Therefore, the graph of &lt;strong&gt;Example 5&lt;/strong&gt; is not edge-transitive, however it is vertex-transitive.
+Intuitively, it means that edges in sets &lt;script type=&quot;math/tex&quot;&gt;E_1 \cup E_2&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;E_3&lt;/script&gt; have a different &lt;em&gt;“graph perpectives”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;arc-transtive-graphs&quot;&gt;Arc-transtive graphs&lt;/h2&gt;
+
+&lt;p&gt;As we can see there are graphs that have edge-transitive but not vertex-transitive (see &lt;strong&gt;Example 2&lt;/strong&gt;) and
+there are graph that are vertex-transive but not edge-transitive (see &lt;strong&gt;Example 3&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;h2 id=&quot;some-remarks&quot;&gt;Some remarks&lt;/h2&gt;
+
+&lt;p&gt;Lectors familiarized with &lt;a href=&quot;https://en.wikipedia.org/wiki/Group_(mathematics)&quot; target=&quot;_blank&quot;&gt;algebraic groups&lt;/a&gt; can note that 
+&lt;script type=&quot;math/tex&quot;&gt;Aut(G)&lt;/script&gt; has a group structure with respect to the composition of functions, where &lt;script type=&quot;math/tex&quot;&gt;\varepsilon&lt;/script&gt; is the identity element.
+In fact, &lt;script type=&quot;math/tex&quot;&gt;Aut(G)&lt;/script&gt; is a subgroup of the &lt;a href=&quot;https://en.wikipedia.org/wiki/Symmetric_group&quot; target=&quot;_blank&quot;&gt;symmetric group&lt;/a&gt; 
+which consists of the set of all permutations of a set.&lt;/p&gt;
+
+&lt;p&gt;The smallest knew graph that is vertex and edge-transitive but not arc-transitive is the &lt;strong&gt;Holt graph&lt;/strong&gt; discovered by Derek Holt in the seventies.
+By the way, if you want keep in touch with Derek Holt, it is only necessary to ask for an interesting question about automatic group theory
+in &lt;a href=&quot;http://mathoverflow.net/users/35840/derek-holt&quot; target=&quot;_blank&quot;&gt;mathoverflow&lt;/a&gt;.&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 10 Oct 2016 01:34:01 +0200</pubDate>
-        <link>https://daniaguirre.github.io/graph-theory/teaching/2016/10/10/bipartite-graphs.html</link>
-        <guid isPermaLink="true">https://daniaguirre.github.io/graph-theory/teaching/2016/10/10/bipartite-graphs.html</guid>
+        <link>https://daniaguirre.github.io/graph-theory/2016/10/10/bipartite-graphs.html</link>
+        <guid isPermaLink="true">https://daniaguirre.github.io/graph-theory/2016/10/10/bipartite-graphs.html</guid>
         
         
         <category>graph-theory</category>
-        
-        <category>teaching</category>
         
       </item>
     

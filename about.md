@@ -6,7 +6,7 @@ subtitle: Just another computer scientist
 permalink: /about/
 ---
 
-Welcome to my website. I hope you can find useful and interesting information about my research work. I am a PhD student in the [Broadband Communication and Distributed Systems](http://bcds.udg.edu){:target="_blank"} team of the [Universitat de Girona](http://udg.edu){:target="_blank"} in Catalonia, Spain. Currently, I am working under the guidance of Dr. [Pere Vilà](http://bcds.udg.edu/perev/doku.php){:target="_blank"} and Dr. [Lluís Fàbrega](http://udg.edu/personal/lluis.fabrega){:target="_blank"}.
+Welcome to my website. I hope you can find useful and interesting information about my research work. I am a PhD student in the [Broadband Communication and Distributed Systems](http://bcds.udg.edu){:target="_blank"} group of the [Universitat de Girona](http://udg.edu){:target="_blank"} in Catalonia, Spain. Currently, I am working under the guidance of Dr. [Pere Vilà](http://bcds.udg.edu/perev/doku.php){:target="_blank"} and Dr. [Lluís Fàbrega](http://udg.edu/personal/lluis.fabrega){:target="_blank"}.
 
 ## Research interests:
 - Graph theory
