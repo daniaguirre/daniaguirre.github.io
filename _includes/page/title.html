@@ -1,8 +1,13 @@
 <h1 class="page-title">
 	{% if page.myphoto %}
           <img id="about-my_photo" src="{{page.myphoto}}" />
-    	{% endif %}
+    {% endif %}
 	
     <div class="page-title__text">{{ page.title }}</div>
-    <div class="page-title__subtitle">{{ page.subtitle }}</div>
+    {% if page.subtitle %}
+    	<div class="page-title__subtitle">{{ page.subtitle }}</div>
+    {% endif %}
+    {% if page.cite %}
+    	<div class="page-title__cite"><i>"{{ page.cite }}"</i> {{ page.author_cite }}</div>
+    {% endif %}
 </h1>

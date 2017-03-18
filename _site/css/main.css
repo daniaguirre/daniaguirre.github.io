@@ -107,7 +107,7 @@ strong {
   font-weight: 700;
   font-size: 70px; }
 
-.page-title__subtitle {
+.page-title__subtitle, .page-title__cite {
   font-weight: 400;
   font-size: 22px;
   color: #828282; }
@@ -235,9 +235,6 @@ ul {
 
   .page-title__text {
     font-size: 40px; }
-
-  .page-title__subtitle {
-    font-size: 18px; }
 
   .post-teaser__title {
     font-size: 18px;
