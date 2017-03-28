@@ -10,7 +10,7 @@ Welcome to my website. I hope you can find useful and interesting information ab
 
 ## Research interests:
 - Graph theory
-- Network sciencie
+- Network science
 - Distributed algorithms
 
 ## Publications:

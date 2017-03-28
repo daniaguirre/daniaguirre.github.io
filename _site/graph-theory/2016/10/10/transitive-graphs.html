@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/ico"     href="/assets/images/favicon.ico">
+<title> Transitive Graphs &raquo;  Daniela Aguirre</title>
+<meta name="description" content="Personal blog about network science, routing, robustnees in networks, distributed algorithms, graph theory.
+">
+<meta name="keywords" content="">
+<link rel="canonical" href="https://daniaguirre.github.io/graph-theory/2016/10/10/transitive-graphs.html">
+        
+
+
+
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Transitive Graphs" />
+<meta name="twitter:description" content="Personal blog about network science, routing, robustnees in networks, distributed algorithms, graph theory.
+" />
+<meta name="twitter:image" content="https://daniaguirre.github.io" />
+
+<!-- Google plus -->
+<meta name="author" content="">
+<link rel="author" href="">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Transitive Graphs">
+<meta property="og:description" content="Personal blog about network science, routing, robustnees in networks, distributed algorithms, graph theory.
+">
+<meta property="og:url" content="https://daniaguirre.github.io/graph-theory/2016/10/10/transitive-graphs.html">
+<meta property="og:site_name" content="Daniela Aguirre">
+
+        <link href='//fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/vendor/normalize-css/normalize.css">
+<link rel="stylesheet" href="/css/main.css">
+
+  <link rel="stylesheet" href="/assets/vendor/highlight/styles/solarized_dark.css">
+
+<link rel="stylesheet" href="/assets/vendor/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" href="/assets/vendor/academicons/css/academicons.min.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="navigation">
+        <a href="/" class="logo">Daniela Aguirre</a>
+
+        <ul class="menu">
+            <li class="menu__entry"><a href="/about">About me</a></li>
+            <li class="menu__entry"><a href="/">Blog</a></li>
+        </ul>
+    </div>
+
+    <ul class="social-links">
+    	
+    	 <a href="http://orcid.org/0000-0003-4945-7258" class="social-links__entry" target="_blank">
+                <i class="ai ai-orcid-square ai-1.5x"></i>
+            </a>
+            
+    	
+    	
+    	
+    	    <a href="https://www.researchgate.net/profile/Daniela_Aguirre_Guerrero" class="social-links__entry" target="_blank">
+                <i class="ai ai-researchgate-square ai-1.5x"></i>
+            </a>
+    	
+    	
+        
+            <a href="https://github.com/daniaguirre" class="social-links__entry" target="_blank">
+                <i class="fa fa-github fa-1.5x"></i>
+            </a>
+        
+
+		
+            <a href="mailto:daniela@codeismo.com" class="social-links__entry">
+                <i class="fa fa-envelope fa-1.5x"></i>
+            </a>
+        
+        
+        
+    </ul>
+</header>
+
+            <h1 class="page-title post-title">
+    <div class="page-title__text post-title__text">Transitive Graphs</div>
+    <div class="page-title__subtitle post-title__subtitle">a brief introduction</div>
+</h1>
+
+<div class="content">
+    <h2 id="automorphism">Automorphism</h2>
+
+<p>An automorphism of a graph <script type="math/tex">G=(V,E)</script> is a bijective map <script type="math/tex">\pi:V \to V</script> that preserves adjacency, i.e. 
+if <script type="math/tex">(v_1,v_2)\in E</script> then <script type="math/tex">(\pi(v_1),\pi(v_2))\in E</script>.</p>
+
+<p><img src="/assets/images/aut_ex1_map.png" alt="automorphism" /></p>
+
+<p><strong>Example 1.</strong> <em>An automorphism of the square graph defined by the permutation <script type="math/tex">\sigma=(1,2,3,4)</script>.</em></p>
+
+<p>An automorphism of a graph <script type="math/tex">G=(V,E)</script> can be seen as a permutation over its set of vertices <script type="math/tex">V</script>.
+The <strong>Example 1</strong> shows an automorphism of the square graph, which is denoted by the permuation <script type="math/tex">\sigma=(1,2,3,4)</script> (in <a href="https://en.wikipedia.org/wiki/Permutation#Cycle_notation" target="_blank">cycle notation</a>). 
+Notice that <script type="math/tex">\sigma^2=(1,3)(2,4)</script>, <script type="math/tex">\sigma^3=(1,4,3,2)</script> and <script type="math/tex">\sigma^4=(1)(2)(3)(4)</script> are also automorphisms of the square graph.</p>
+
+<p><img src="/assets/images/aut_ex2_map.png" alt="automorphisms" /></p>
+
+<p><strong>Example 2.</strong> <em>The automorphisms of the square graph defined by the permutations <script type="math/tex">\sigma^2</script>, <script type="math/tex">\sigma^3</script> and <script type="math/tex">\sigma^4</script>.</em></p>
+
+<p>Here, we have two interesting questions:</p>
+
+<ol>
+  <li>Do all graphs have any automorphism?</li>
+  <li>What is the maximum number of automorphisms that a graph can have?</li>
+</ol>
+
+<p>The answer of the first question is <em>yes</em>, all graphs have at least the <code class="highlighter-rouge">trivial automorphism</code>, denoted by <script type="math/tex">\varepsilon</script>, 
+that maps each vertex to itself. As we can see in the <strong>Example 2</strong>, <script type="math/tex">\varepsilon=\sigma^4</script>. 
+Turning now to the second question, since an automorphism is defined by a permutation over <script type="math/tex">|V|</script>, 
+then a graph has at most <script type="math/tex">|V|!</script> automorphisms, it is the number of permutations over <script type="math/tex">V</script>. 
+For instance, the set of automorphisms of the square graph  is <script type="math/tex">Aut(G)=\{\varepsilon, \sigma, \sigma^2, \sigma^3, \rho, \tau\}</script>, where <script type="math/tex">\rho=(2,4)</script> and <script type="math/tex">\tau=(1,3)</script>.
+In particular, for the complete graph of <script type="math/tex">n</script> vertices, i.e. <script type="math/tex">K_n</script>, any permutation over <script type="math/tex">V</script> define an automorphism, for instance <script type="math/tex">|Aut(K_3)|!=3!=6</script>.</p>
+
+<p><strong>Example 3.</strong> <em>The complete graph <script type="math/tex">K_3</script> and <script type="math/tex">Aut(K_3)=\{\sigma,\sigma^2,\sigma^3,\rho,\tau,\phi\}</script> where <script type="math/tex">\sigma=(1,2,3)</script>, <script type="math/tex">\rho=(1,3)</script>, <script type="math/tex">\tau=(2,1)</script>, <script type="math/tex">\phi=(3,2)</script>.</em></p>
+
+<p>Lectors familiarized with <a href="https://en.wikipedia.org/wiki/Group_(mathematics)" target="_blank">algebraic groups</a> can see that 
+<script type="math/tex">Aut(G)</script> has a group structure with respect to the composition of functions, where <script type="math/tex">\varepsilon</script> is the identity element.
+In fact, <script type="math/tex">Aut(G)</script> is a subgroup of the <a href="https://en.wikipedia.org/wiki/Symmetric_group" target="_blank">symmetric group</a> 
+which consists of the set of all permutations of a set.</p>
+
+<h2 id="vertex-transitive-graphs">Vertex-transitive Graphs</h2>
+
+<p>A graph <script type="math/tex">G=(V,E)</script> is vertex-transitive if there is an automorphims between any two of its vertices, i.e. 
+for all <script type="math/tex">u,v \in V</script>, there exists <script type="math/tex">\pi \in Aut(G)</script> such that <script type="math/tex">\pi(u)=v</script>. Notice that the graph of <strong>Example 1</strong> is vertex-transitive.
+Now, look at the graph of <strong>Example 4</strong>, is it vertex-transitive?.</p>
+
+<p><strong>Example 4.</strong> <em>The 3-path graph with the automorphism <script type="math/tex">\sigma = (1,3)</script> and <script type="math/tex">Aut(G)=\{\varepsilon, \sigma\}</script></em></p>
+
+<p>Roughly speaking, all vertices in a vertex-transive graph have the same <em>“graph perpective”</em>. 
+In <strong>Example 4</strong>, vertices <script type="math/tex">1</script> and <script type="math/tex">3</script> are the end points of the 3-path, then they have the same <em>“graph perpective”</em>. 
+In fact, <script type="math/tex">\sigma</script> defines an automorphism between these vertices.
+By the other hand, the vertex <script type="math/tex">2</script> is an internal vertex of the 3-path, then it has a different <em>“graph perpective”</em> 
+and it is not possible define automorphism over the 3-path that maps the vertex <script type="math/tex">2</script> to the vertex <script type="math/tex">1</script> or <script type="math/tex">3</script>.
+Therefore, the 3-path is not vertex-transitive.</p>
+
+<p>In general, all vertex-transitive graph are <a href="https://en.wikipedia.org/wiki/Regular_graph" target="_blank">regular</a> but not all regular graphs are vertex-transitive.</p>
+
+<h2 id="edge-transitive-graphs">Edge-transitive Graphs</h2>
+
+<p>A graph <script type="math/tex">G=(V,E)</script> is edge-transitive if there is an automorphism between any two edges, i.e. 
+for all <script type="math/tex">(u,v), (w,x) \in E</script>, there exists <script type="math/tex">\pi \in Aut(G)</script> such that <script type="math/tex">(\pi(u),\pi(v)) = (w,x)</script> or <script type="math/tex">(\pi(u),\pi(v)) = (x,w)</script>.</p>
+
+<p>From <strong>Example 4</strong>, <script type="math/tex">E=\{(1,2),(2,3)\}</script> and  <script type="math/tex">(\sigma(1),\sigma(2))=(3,2), (\sigma(3),\sigma(2))=(1,2)\in E</script>,
+therefore the 3-path graph is edge-transitive. Following a similiar approach it can be showed that
+the square graph (see <strong>Example 1</strong>) is also edge-transitive.</p>
+
+<p><strong>Example 5.</strong> <em>A graph with the automorphisms <script type="math/tex">\sigma = (1,2,3,4,5)(6,7,8,9,10)</script>, <script type="math/tex">\rho=(1,6)(2,7)(3,8)(4,9)(5,10)</script>, 
+<script type="math/tex">\tau=(2,5)(3,4)(7,10)(8,9)</script> and <script type="math/tex">Aut(G)=\{\varepsilon, \sigma^i, \sigma^i\rho, \rho, \tau\}</script></em> for <script type="math/tex">1\leq i \leq 5</script>.</p>
+
+<p>Let see if the graph <script type="math/tex">G=(V,E)</script> of <strong>Example 5</strong> is edge-transitive. Let <script type="math/tex">E_1</script>, <script type="math/tex">E_2</script> and <script type="math/tex">E_3</script> be subsets of <script type="math/tex">E</script>, such that 
+<script type="math/tex">E=E_1\cup E_2 \cup E_3</script> where <script type="math/tex">E_1=\{(1,2),(2,3),(3,4),(4,5),(5,1)\}</script>, <script type="math/tex">E_2=\{(6,7),(7,8),(8,9),(9,10)\}</script> and
+<script type="math/tex">E_3=\{(1,6),(2,7),(3,8),(4,9),(5,10)\}</script>. We have that:</p>
+
+<ul>
+  <li><script type="math/tex">\sigma^i\rho</script> defines an automorphism from edges in <script type="math/tex">E_1</script> to edges in <script type="math/tex">E_2</script>, 
+e.g. <script type="math/tex">(1,2)\in E_1</script> and <script type="math/tex">(\sigma(\rho(1)),\sigma( \rho (2)))=(\sigma(6),\sigma(7))=(7,8)\in E_2</script>.</li>
+  <li><script type="math/tex">\sigma^i</script> defines an automorphism between edges in <script type="math/tex">E_1</script> and <script type="math/tex">E_2</script>, 
+e.g. <script type="math/tex">(3,4)\in E_1</script> and <script type="math/tex">(\sigma(3),\sigma(4))=(4,5)\in E_1</script>. Similarly, <script type="math/tex">(7,8)\in E_2</script> and <script type="math/tex">(\sigma^2(7),\sigma^2(8))=(9,10)\in E_2</script>.</li>
+  <li><script type="math/tex">\tau</script> defines an automorphism between edges in <script type="math/tex">E_3</script>. 
+e.g. <script type="math/tex">(2,7)\in E_3</script>, <script type="math/tex">(\tau(2),\tau(7))=(5,10)\in E_3</script>.</li>
+</ul>
+
+<p>Since edges in <script type="math/tex">E_3</script> are part of two cycles of length 4 and edges in 
+<script type="math/tex">E_1 \cup E_2</script> are part of two cycles of length 4 and 5, then it is not possible define an automorphism between them.
+Therefore, the graph of <strong>Example 5</strong> is not edge-transitive. 
+Intuitively, it means that edges in sets <script type="math/tex">E_1 \cup E_2</script> and <script type="math/tex">E_3</script> have a different <em>“graph perpectives”</em>.
+In contrast, this graph is vertex-transitive, note that all nodes are part of two cycles of length 4 and 5, 
+then all nodes have the same <em>“graph perpective”</em>.</p>
+
+<p>In contrast with vertex-transitive graphs, edge-transitive graphs are not necessarilly regular. 
+However, if a graph is regular and edge-transitive, then it is also vertex-transitive.</p>
+
+<h2 id="arc-transtive-graphs">Arc-transtive graphs</h2>
+
+<p>A graph <script type="math/tex">G=(V,E)</script> is arc-transitive (also called <strong>symmetric</strong> or <strong>flag-transitive</strong>) if there is an automorphism between any two edges, i.e. 
+for all <script type="math/tex">(u,v), (w,x) \in E</script>, there exists <script type="math/tex">\pi \in Aut(G)</script> such that <script type="math/tex">(\pi(u),\pi(v)) = (w,x)</script> and <script type="math/tex">(\pi(u),\pi(v)) = (x,w)</script>. 
+Notice that this condition is stronger that the edge-transitive condition.</p>
+
+<p>For instance, in the 3-path graph (see <strong>Example 4</strong>), edge <script type="math/tex">(1,2)</script> is maped to vertices in edge <script type="math/tex">(2,3)</script> through the permutation 
+<script type="math/tex">\sigma =(1,3)</script>, it is <script type="math/tex">(\sigma(1),\sigma(2))=(3,2)</script>. However, there is not automorphism <script type="math/tex">\pi</script> such that
+<script type="math/tex">(\sigma(1),\sigma(2))=(2,3)</script>.
+Therefore, the 3-path is edge-transitive but not arc-transitive. By the other hand, the square-graph (see <strong>Example 1</strong> and <strong>2</strong>) 
+and the 3-complete graph (see <strong>Example 3</strong>) are arc-transitive.</p>
+
+<p>In general, arc-transitive graphs are vertex and edge-transitive, however, there are vertex and edge-transitive graphs
+with odd degree that are not arc-transitive. 
+These graps are called <strong>semi-simetric</strong> or <strong>half-transitive</strong>. 
+The smallest known semi-symmetric graph is the <a href="https://en.wikipedia.org/wiki/Holt_graph" target="_blank">Holt graph</a> discovered by Derek Holt in the seventies.</p>
+
+<h2 id="t-arc-transitive-graphs">t-arc-transitive graphs</h2>
+
+<p>A graph is t-arc-transitive, also called <strong>t-transitive</strong>, if there is an automorphism between any t-arcs but not (t+1)-arcs, i.e. 
+for all two t-arcs <script type="math/tex">v_1,v_2,..., v_t</script> and <script type="math/tex">u_1,u_2,...,u_t</script>, there exists <script type="math/tex">\pi \in Aut(G)</script> such that <script type="math/tex">\pi(v_i)= u_i</script> for <script type="math/tex">1\leq i\leq t</script>.</p>
+
+<p><strong>Example 6.</strong> <em>The Möbius–Kantor graph is 2-arc-transitive.</em></p>
+
+<h2 id="distance-transitive-graphs">Distance-transitive graphs</h2>
+
+<p>A graph is distance transitive, if there is an automorphism between any two pair of vertice that are at the same distance, i.e. 
+for all <script type="math/tex">v_1,v_2,u_1,u_2\in V</script>, such that <script type="math/tex">d(v_1,v_2)=d(u_1,u_2)</script>, there exists <script type="math/tex">\pi \in Aut(G)</script> such that <script type="math/tex">\pi(v_1)= u_1</script> and <script type="math/tex">\pi(v_2)= u_2</script>.</p>
+
+<p><strong>Example 6.</strong> <em>The Petersen graph is distance transitive.</em></p>
+
+
+</div>
+
+<div class="about">
+    <div class="about__devider">*****</div>
+    <div class="about__text">
+        Written by <strong>  Daniela Aguirre Guerrero </strong>
+        on <strong>10 October 2016</strong>
+    </div>
+</div>
+
+
+        </div>
+
+        <script src="/assets/vendor/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src='//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+        
+    </body>
+</html>
