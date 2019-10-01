@@ -4,11 +4,11 @@
     <title>Daniela Aguirre</title>
     <description>Personal blog about network science, routing, robustnees in networks, distributed algorithms, graph theory.
 </description>
-    <link>https://daniaguirre.github.io/</link>
-    <atom:link href="https://daniaguirre.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Mar 2017 22:53:20 +0100</pubDate>
-    <lastBuildDate>Sun, 19 Mar 2017 22:53:20 +0100</lastBuildDate>
-    <generator>Jekyll v3.2.1</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 30 Sep 2019 22:51:20 -0500</pubDate>
+    <lastBuildDate>Mon, 30 Sep 2019 22:51:20 -0500</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
     
       <item>
         <title>Transitive Graphs</title>
@@ -134,9 +134,9 @@ for all &lt;script type=&quot;math/tex&quot;&gt;v_1,v_2,u_1,u_2\in V&lt;/script&
 &lt;p&gt;&lt;strong&gt;Example 6.&lt;/strong&gt; &lt;em&gt;The Petersen graph is distance transitive.&lt;/em&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Mon, 10 Oct 2016 01:34:01 +0200</pubDate>
-        <link>https://daniaguirre.github.io/graph-theory/2016/10/10/transitive-graphs.html</link>
-        <guid isPermaLink="true">https://daniaguirre.github.io/graph-theory/2016/10/10/transitive-graphs.html</guid>
+        <pubDate>Sun, 09 Oct 2016 18:34:01 -0500</pubDate>
+        <link>http://localhost:4000/graph-theory/2016/10/09/transitive-graphs.html</link>
+        <guid isPermaLink="true">http://localhost:4000/graph-theory/2016/10/09/transitive-graphs.html</guid>
         
         
         <category>graph-theory</category>
