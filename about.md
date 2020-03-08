@@ -9,9 +9,9 @@ permalink: /about/
 Welcome to my website. I hope you can find useful and interesting information about my research work. I am a titular professor at the [Deparment of Information Systems and Communications](http://www.ler.uam.mx/es/UAMLerma/DSIC){:target="_blank"} of the [Universidad Autónoma Metropolitana](http://www.ler.uam.mx){:target="_blank"} in Lerma, Mexico.
 
 ## Research interests:
-- Routing in large-scale networks
+- Distributed algorithms for large-scale networks
 - Graph theory
-- Distributed algorithms
+- Network science
 - Complex systems
 
 ## Publications:
